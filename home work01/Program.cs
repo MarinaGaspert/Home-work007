@@ -1,4 +1,4 @@
-﻿ /*Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
+﻿/*Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
 m = 3, n = 4.
 0,5 7 -2 -0,2
 1 -3,3 8 -9,9
@@ -25,18 +25,18 @@ void PrintMatrix(int[,] array)
 
 int[,] InitMatrix(int m, int n)
 {
-    int[,] resultMatrix= new int[m,n];
+    int[,] resultMatrix = new int[m, n];
     Random rnd = new Random();
     for (int i = 0; i < m; i++)
     {
         for (int j = 0; j < n; j++)
         {
-            resultMatrix[i,j] = rnd.Next(-10,10);
+            resultMatrix[i, j] = rnd.Next(-10, 10);
         }
     }
     return resultMatrix;
 }
 int m = GetNumber("Введите количество строк: ");
 int n = GetNumber("Введите количество столбцов: ");
-int[,] matrix = InitMatrix(m,n);
+int[,] matrix = InitMatrix(m, n);
 PrintMatrix(matrix);
