@@ -22,7 +22,7 @@ else
 {
     Console.WriteLine($"{rows}{colums} -> такого числа в массиве нет");
 }
-// Заполнение массива рандомными числами от 1 до 9
+// Заполнение массива рандомными числами
 void FillArray(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
